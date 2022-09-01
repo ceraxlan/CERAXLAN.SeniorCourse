@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-if (app.Environment.IsProduction())//for developer
+if (app.Environment.IsProduction())//detailed information for developers
     app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();
