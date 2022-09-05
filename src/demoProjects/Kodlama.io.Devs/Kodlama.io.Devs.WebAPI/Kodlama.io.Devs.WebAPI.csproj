@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
