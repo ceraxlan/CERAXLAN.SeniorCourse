@@ -1,9 +1,10 @@
 ﻿using Kodlama.io.Devs.Application.Services.Repositories;
+using Kodlama.io.Devs.Persistence.Contexts;
 using Kodlama.io.Devs.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Persistence.Contexts;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;

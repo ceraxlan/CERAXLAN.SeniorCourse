@@ -32,7 +32,7 @@ namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Commands.Crea
 
             #region Repository
             ProgrammingLanguage mappedProgrammingLanguage = _mapper.Map<ProgrammingLanguage>(request);
-            ProgrammingLanguage createdProgrammingLanguage = await _programmingLanguageBusinessRules.AddAsync(mappedProgrammingLanguage);
+            ProgrammingLanguage createdProgrammingLanguage = await _programmingLanguageRepository.AddAsync(mappedProgrammingLanguage);
             CreatedBrandDto createdProgrammingLanguageDto = _mapper.Map<CreatedProgrammingLanguageDto>(createdProgrammingLanguage);
             #endregion
 
