@@ -28,7 +28,7 @@ namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Queries.GetBy
         {
             var programmingLanguage = await _programmingLanguageRepository.GetAsync(x => x.Id == request.Id);
 
-            await _programmingLanguageBusinessRules.ProgrammingLanguageShouldExistWhenRequested(programmingLanguage);
+            _programmingLanguageBusinessRules.ProgrammingLanguageShouldExistWhenRequested(programmingLanguage);
 
             var programmingLanguageGetByIdDto = _mapper.Map<ProgrammingLanguageGetByIdDto>(programmingLanguage);
             return programmingLanguageGetByIdDto;

@@ -49,15 +49,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentACar.WebAPI", "src\demo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kodlama.io.Devs", "Kodlama.io.Devs", "{3CDC99E6-20BB-4F2D-903E-688EFA4E11FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Application", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{6FEB5B25-77C7-4E85-836E-CE1A7EC913DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Application", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{6FEB5B25-77C7-4E85-836E-CE1A7EC913DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Domain", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{34C20D18-6823-40DD-8019-95EE89927B13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Domain", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{34C20D18-6823-40DD-8019-95EE89927B13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Infrastructure", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{534982D5-BC4A-470F-A525-6A293B2F0F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Infrastructure", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{534982D5-BC4A-470F-A525-6A293B2F0F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Persistence", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{A34E77FF-091B-4B0C-824C-767367A09653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Persistence", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{A34E77FF-091B-4B0C-824C-767367A09653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.WebAPI", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{A808C66A-ECD9-4EB5-8503-40A80EC36027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.WebAPI", "src\demoProjects\Kodlama.io.Devs\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{A808C66A-ECD9-4EB5-8503-40A80EC36027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
