@@ -1,8 +1,8 @@
-﻿using Application.Features.Brands.Dtos;
-using Application.Features.Brands.Rules;
-using Application.Services.Repositories;
+﻿using RentACar.Application.Features.Brands.Dtos;
+using RentACar.Application.Features.Brands.Rules;
+using RentACar.Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
+using RentACar.Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Brands.Commands.CreateBrand
+namespace RentACar.Application.Features.Brands.Commands.CreateBrand
 {
     public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommand, CreatedBrandDto>
     {

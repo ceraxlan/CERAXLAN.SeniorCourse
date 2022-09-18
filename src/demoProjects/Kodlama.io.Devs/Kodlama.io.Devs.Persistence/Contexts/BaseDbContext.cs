@@ -26,7 +26,10 @@ namespace Kodlama.io.Devs.Persistence.Contexts
                 x.ToTable("ProgrammingLanguages").HasKey(k => k.Id);
                 x.Property(p => p.Id).HasColumnName("Id");
                 x.Property(p => p.Name).HasColumnName("Name");
-            });          
+            });
+
+            ProgrammingLanguage[] programmingLanguageEntitySeeds = { new(1, "Java"), new(2, "C#") };
+            modelBuilder.Entity<ProgrammingLanguage>().HasData(programmingLanguageEntitySeeds);
         }
     }
 }

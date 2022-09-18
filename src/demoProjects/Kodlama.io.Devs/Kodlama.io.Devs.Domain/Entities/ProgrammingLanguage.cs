@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kodlama.io.Devs.Domain.Entities
 {
-    public class ProgrammingLanguage : Entity
+    public class ProgrammingLanguage :Entity
     {
         public string Name { get; set; }
 
@@ -15,10 +15,11 @@ namespace Kodlama.io.Devs.Domain.Entities
         {
 
         }
-        public ProgrammingLanguage(int id,string name):this()
+        public ProgrammingLanguage(int id, string name) : this()
         {
-            Name = name;
             Id = id;
+            Name = name;
+           
         }
     }
 }

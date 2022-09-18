@@ -1,6 +1,6 @@
-﻿using RentACar.Application.Features.Brands.Rules;
-using Core.Application.Pipelines.Validation;
+﻿using Core.Application.Pipelines.Validation;
 using FluentValidation;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Rules;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentACar.Application
+namespace Kodlama.io.Devs.Application
 {
     public static class ApplicationServiceRegistration
     {
@@ -20,7 +20,7 @@ namespace RentACar.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<BrandBusinessRules>();
+            services.AddScoped<ProgrammingLanguageBusinessRules>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));

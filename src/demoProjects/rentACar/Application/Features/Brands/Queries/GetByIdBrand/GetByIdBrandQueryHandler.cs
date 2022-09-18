@@ -1,6 +1,6 @@
-﻿using Application.Features.Brands.Dtos;
-using Application.Features.Brands.Rules;
-using Application.Services.Repositories;
+﻿using RentACar.Application.Features.Brands.Dtos;
+using RentACar.Application.Features.Brands.Rules;
+using RentACar.Application.Services.Repositories;
 using AutoMapper;
 using MediatR;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Brands.Queries.GetByIdBrand
+namespace RentACar.Application.Features.Brands.Queries.GetByIdBrand
 {
     public class GetByIdBrandQueryHandler : IRequestHandler<GetByIdBrandQuery, BrandGetByIdDto>
     {

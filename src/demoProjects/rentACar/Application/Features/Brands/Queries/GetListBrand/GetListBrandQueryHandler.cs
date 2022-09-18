@@ -1,5 +1,5 @@
-﻿using Application.Features.Brands.Models;
-using Application.Services.Repositories;
+﻿using RentACar.Application.Features.Brands.Models;
+using RentACar.Application.Services.Repositories;
 using AutoMapper;
 using MediatR;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Brands.Queries.GetListBrand
+namespace RentACar.Application.Features.Brands.Queries.GetListBrand
 {
     public class GetListBrandQueryHandler : IRequestHandler<GetListBrandQuery, BrandListModel>
     {

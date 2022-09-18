@@ -3,6 +3,7 @@ using Core.Persistence.Paging;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Dtos;
 using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Models;
+using Kodlama.io.Devs.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,11 @@ namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Profiles
     {
         public MappingProfiles()
         {
-            CreateMap<ProgrammingLanguage, CreatedProgrammingLanguageDto>().ReverseMap();
-            CreateMap<ProgrammingLanguage, CreateProgrammingLanguageCommand>().ReverseMap();
-            CreateMap<IPaginate<ProgrammingLanguage>, ProgrammingLanguageListModel>().ReverseMap();
-            CreateMap<ProgrammingLanguage, ProgrammingLanguageListDto>().ReverseMap();
-            CreateMap<ProgrammingLanguage, ProgrammingLanguageGetByIdDto>().ReverseMap();
+            CreateMap<Kodlama.io.Devs.Domain.Entities.ProgrammingLanguage, CreatedProgrammingLanguageDto>().ReverseMap();
+            CreateMap<Kodlama.io.Devs.Domain.Entities.ProgrammingLanguage, CreateProgrammingLanguageCommand>().ReverseMap();
+            CreateMap<IPaginate<Kodlama.io.Devs.Domain.Entities.ProgrammingLanguage>, ProgrammingLanguageListModel>().ReverseMap();
+            CreateMap<Kodlama.io.Devs.Domain.Entities.ProgrammingLanguage, ProgrammingLanguageListDto>().ReverseMap();
+            CreateMap<Kodlama.io.Devs.Domain.Entities.ProgrammingLanguage, ProgrammingLanguageGetByIdDto>().ReverseMap();
         }
     }
 }

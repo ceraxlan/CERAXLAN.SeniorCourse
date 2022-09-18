@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\Enums\**" />
+    <EmbeddedResource Remove="Entities\Enums\**" />
+    <None Remove="Entities\Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Enums\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>

@@ -1,15 +1,12 @@
 ﻿using Core.Persistence.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Domain.Entities
+
+namespace RentACar.Domain.Entities
 {
     public class Brand : Entity
     {
         public string Name { get; set; }
+        public virtual ICollection<Model> Models { get; set; }
         public Brand()
         {
 
@@ -17,8 +14,8 @@ namespace Domain.Entities
 
         public Brand(int id ,string name) : this()
         {
-            Name = name;
             Id = id;
+            Name = name;          
         }
     }
 }

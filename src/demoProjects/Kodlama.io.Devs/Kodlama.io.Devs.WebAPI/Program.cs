@@ -1,4 +1,6 @@
 using Core.CrossCuttingConcerns.Exceptions;
+using Kodlama.io.Devs.Application;
+using Kodlama.io.Devs.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
