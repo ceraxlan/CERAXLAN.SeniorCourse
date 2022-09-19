@@ -1,5 +1,5 @@
 ﻿using Core.Application.Requests;
-using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Models;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguages.Models;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Queries.GetListProgrammingLanguage
+namespace Kodlama.io.Devs.Application.Features.ProgrammingLanguages.Queries.GetListProgrammingLanguage
 {
     public class GetListProgrammingLanguageQuery : IRequest<ProgrammingLanguageListModel>
     {

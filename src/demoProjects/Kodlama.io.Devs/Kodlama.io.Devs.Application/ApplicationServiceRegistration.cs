@@ -1,6 +1,6 @@
 ﻿using Core.Application.Pipelines.Validation;
 using FluentValidation;
-using Kodlama.io.Devs.Application.Features.ProgrammingLanguage.Rules;
+using Kodlama.io.Devs.Application.Features.ProgrammingLanguages.Rules;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
