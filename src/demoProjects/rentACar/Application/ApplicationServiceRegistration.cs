@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using RentACar.Application.Features.Auths.Rules;
 using RentACar.Application.Services.AuthService;
 using RentACar.Application.Services.UserService;
+using Core.Application.Rules;
+using Core.Application.Pipelines.Authorization;
 
 namespace RentACar.Application
 {
@@ -23,12 +25,11 @@ namespace RentACar.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<BrandBusinessRules>();
-            services.AddScoped<AuthBusinessRules>();
-            
+            services.AddSubClassesOfType(Assembly.GetExecutingAssembly(), typeof(BaseBusinessRules));
+
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CacheRemovingBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
@@ -40,6 +41,26 @@ namespace RentACar.Application
 
             return services;
 
+        }
+        public static IServiceCollection AddSubClassesOfType(
+        this IServiceCollection services,
+        Assembly assembly,
+        Type type,
+        Func<IServiceCollection, Type, IServiceCollection>? addWithLifeCycle = null)
+        {
+            var types = assembly.GetTypes().Where(t => t.IsSubclassOf(type) && type != t).ToList();
+            foreach (var item in types)
+            {
+                if (addWithLifeCycle == null)
+                {
+                    services.AddScoped(item);
+                }
+                else
+                {
+                    addWithLifeCycle(services, type);
+                }
+            }
+            return services;
         }
     }
 }
