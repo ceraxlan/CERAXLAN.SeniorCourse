@@ -9,7 +9,7 @@ namespace RentACar.Domain.Entities
         public virtual ICollection<Model> Models { get; set; }
         public Brand()
         {
-
+           
         }
 
         public Brand(int id ,string name) : this()

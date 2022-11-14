@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RentACar.Application.Features.Auths.Rules;
 using RentACar.Application.Services.AuthService;
+using RentACar.Application.Services.UserService;
 
 namespace RentACar.Application
 {
@@ -34,6 +35,8 @@ namespace RentACar.Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
             services.AddScoped<IAuthService, AuthManager>();
+            services.AddScoped<IUserService, UserManager>();
+
 
             return services;
 

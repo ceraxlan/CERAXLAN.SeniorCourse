@@ -13,6 +13,9 @@ namespace RentACar.Application.Services.AuthService
         public Task<AccessToken> CreateAccessToken(User user);
         public Task<RefreshToken> CreateRefreshToken(User user, string ipAddress);
         public Task<RefreshToken> AddRefreshToken(RefreshToken refreshToken);
+        public Task SendAuthenticatorCode(User user);
+        public Task VerifyAuthenticatorCode(User user, string authenticatorCode);
+        public Task DeleteOldRefreshTokens(int userId);
 
     }
 }

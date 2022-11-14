@@ -7,10 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Application.Rules;
+using RentACar.Application.Features.Brands.Constants;
 
 namespace RentACar.Application.Features.Brands.Rules
 {
-    public class BrandBusinessRules
+    public class BrandBusinessRules : BaseBusinessRules
     {
         private readonly IBrandRepository _brandRepository;
 
@@ -29,6 +31,12 @@ namespace RentACar.Application.Features.Brands.Rules
         {
             if (brand == null) throw new BusinessException("Requested Brand does not exist.");
             return Task.CompletedTask;
+        }
+
+        public async Task BrandIdShouldExistWhenSelected(int id)
+        {
+            Brand? result = await _brandRepository.GetAsync(b => b.Id == id);
+            if (result == null) throw new BusinessException(BrandMessages.BrandNotExists);
         }
     }
 }
