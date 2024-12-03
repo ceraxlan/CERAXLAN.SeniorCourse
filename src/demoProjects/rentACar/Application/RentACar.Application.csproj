@@ -10,6 +10,9 @@
 		<Folder Include="Features\Models\Commands\" />
 		<Folder Include="Features\Models\Constants\" />
 		<Folder Include="Features\Models\Rules\" />
+		<Folder Include="Features\OperationClaims\" />
+		<Folder Include="Features\UserOperationClaims\" />
+		<Folder Include="Features\Users\" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
